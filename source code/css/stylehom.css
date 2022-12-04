@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,200;1,200;1,300&family=Roboto:wght@300&display=swap');
+body{
+    background-color: black;
+    /* background-color: rgb(27, 23, 23); */
+    scroll-behavior: auto;
+    font-family: sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+     height: 100%;
+     width:100%;
+}
+.navbar-style{
+    background-color: #8E214F;
+    box-shadow: 0 5p 10px #8E214F;
+    text-transform: uppercase;
+    font-size: small;
+    position: fixed;
+   width: 100%;
+}   
+.logo{
+    height: 40px;
+    padding: 2px 10px;
+    width: auto;
+}
+.nav-navbar li{
+  display: inline;
+  float: left;
+    list-style: none;
+    padding:  0 20px;
+    text-align: center;
+}
+.nav li a{
+    color: black;
+}
+.songList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e2b5c8;
+    margin-left: 50%;
+    margin-top: 2%;
+    border-radius: 15px;
+    border-style: solid;
+}
+.heading{
+        font-size: 35px;
+        font-family: 'Poppins';
+        color: aliceblue;
+        padding: 3px 0;
+        text-align: left;
+        margin-left: 10%;
+}
+.songItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.songItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: stretch;
+    margin-bottom: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Font Awesome 5 Pro';
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.container-playing {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: ghostwhite;
+    background: #dbcdd3;
+    padding: 10px 20px;
+}
+.songItemPlay{
+    cursor: pointer;
+    margin-left: 10px;
+}
+input#myProgressBar {
+    color: black;
+    background: beige;
+    height: 30%;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+}
+.songInfo {
+    margin: auto;
+    color: black;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+}
+.icons {
+    margin: auto;
+    height: auto;
+    padding: 5px 0;
+    color: black;
+    cursor: pointer;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.bg-1{
+    height: 120vh;
+    width: 100%;
+    background-image: url(../images/homebg.png);
+    background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   box-shadow: rgba(0, 0, 0, 0.1);
+}
+.text{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1) ;
+  margin-left: 4%;
+  margin-top: 18%;
+  height: auto;
+  border: solid rgba(0, 0, 0, 0.1);
+}
+.title{
+    font-size: 50px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.expo{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: auto;
+    text-align: center;
+    border: solid;
+    border-color: black ;
+    border-bottom-width: 18px;
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-left-color: rgb(97, 92, 92);
+    border-right-color: rgb(97, 92, 92);
+    color: white;
+}
+.expo::placeholder{
+    color: rgb(184, 175, 175);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.bg-2{
+    height: 120vh;
+    background-color:#a5416bdc;
+    width: 100%;
+}
+
+.active{
+    background-color: rgba(225, 225, 225, 0.5);
+}
+.foter{
+    max-width: 1107px;
+    background: black;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    font-family : 'Poppins', sans-serif;
+    background : black;
+    padding : 70px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 30%;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #ffff;
+    text-transform: capitalize;
+   margin-bottom: 30px;
+    font-weight:500;
+    position: relative;
+}
+.footer-col::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: palevioletred;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffff;
+    padding-left: 15px;
+}
+.footer-col .sociallinks{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: rgba(225, 225, 225, 0.5);
+    border-radius: 15px;
+}
+.flogo{
+    margin-left: 60px;
+    margin-top: 200px;
+    padding: 10px 8px;
+    cursor: pointer;
+    height: 80px;
+
+}
+.content{
+    margin-left: 30px;
+    margin-top: 180px;
+    text-align: left;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="signup_form">
+        <div class="title">
+            SIGN UP
+        </div>
+            <div class="subtext">
+            <span><small>already a member? <a href="../html/loginpage.html"><ul>login</ul></a></small></span>
+            <br>
+        </div>  
+        <form id="form"action="form.js">
+        <div class="form_wrap">
+            <div class="input_grp">
+                <label for="name"> <b>Name:</b> <br></label>
+                    <input type="text" name="Your Name" placeholder="Enter your name" class="name" id="Name">
+            </div> 
+            <div class="input_grp">
+                <label for="Email"> <b> Email:</b> <br> </label>
+                    <input type="email" name="email address" placeholder="Enter your email" class="email" id="Email">
+            </div>
+            <div class="input_grp">
+                <label for="password"> <b>Password:</b> <br></label>
+                    <input type="password" name="password" placeholder="Enter your password" class="ps" id="pass_word">
+            </div>
+            <div class="input_grp">
+                <label> <b>Confirm Password:</b><br>
+                    <input type="password" name=" Confirm Password" placeholder=" Confirm your password" class="cps" id="confirmps">
+                </label>
+            </div>
+            <div class="input_grp">
+                <label for="submit"></label> <br>
+                    <a href="../html/userhome.html"><input type="submit" value="Sign Up" class="submit_botton" id="submitbutton">
+                    </a>
+            </div>
+
+
+        </div>
+        </form>
+    </div>
+    </div>
+    
+</body>
+<script>
+    var submit=document.getElementById("submitbutton");
+    var form=document.getElementById("form");
+    form.addEventListener('submit',(event)=>{
+        event.preventDefault();
+        var name=document.getElementById("Name").value;
+        var password=document.getElementById("pass_word").value;
+        var email=document.getElementById("Email").value;
+        var Confirmps=document.getElementById("confirmps").value;
+        if (password.value==Confirmps.value){
+            form.submit();
+        }
+       else{
+           console.log("passwords does not match");
+       }
+    })
+</script>
+</html>

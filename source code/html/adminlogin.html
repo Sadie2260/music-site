@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin login panal </title>
+    <link rel="stylesheet" href="../css/indext.css">
+</head> 
+<body >
+    <div class="magic">
+        <div class="myform">
+            <div class="title">
+                Admin Login 
+            </div>
+       <div class="wrapper">   
+         <form name="form">
+              <div class="input_class">
+             <label for="name"></label>
+            <input type="text" name="name" placeholder="Admin Name" class="admin_name">
+        </div>
+<div class="input_class">
+    <label for="password"></label>
+            <input type="password" name="password" placeholder="Password" class="password">
+        </div>
+        <div class="input_class">
+            <label for="button"></label>
+            <button type="submit" onclick="function login()" class="button">LOGIN</button>
+         </form>
+        </div>
+    </div>  
+    </div>
+          
+        </div>
+
+    </div>
+ 
+
+    
+</body>
+<script>
+    function login(){
+        const un=document.forms["form"]["name"].value;
+        const ps=document.forms["form"]["name"].value;
+        if(un=="sadia" && ps=="12345")
+        {
+            window.location.href="../html/adminpanel.html";
+        }
+        else{
+            alert("invalid password or name")
+        }
+    }
+</script>
+</html>

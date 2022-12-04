@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+    body{
+        background-image: url(../images/mm.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup_form{
+   margin: auto;
+    background-color:rgba(0, 0,0, 0.1) ;
+    padding: 90px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px #333;
+    height: 550px;
+    width: 505px;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.subtext{
+    text-align: center;
+}
+.name {
+    font-size: 15px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.5);
+    border-block-end:dotted;
+    color: black;
+    border-style: hidden;
+    border-color: gray;
+    box-sizing: border-box;
+  text-align: center;
+  -ms-flex-align: center;
+  size-adjust: 50px;
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+}
+.email{
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    border-block-end:dotted;
+    color: black;
+    border-style: hidden;
+    border-color: gray;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    vertical-align: 40%;
+    size-adjust: 50px;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+}
+.ps{
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    border-block-end:dotted;
+    color: black;
+    border-style: hidden;
+    border-color: gray;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    size-adjust: 50px;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+}
+.cps{
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    border-block-end:dotted;
+    color: black;
+    border-style: hidden;
+    border-color: gray;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    size-adjust: 50px;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+
+}
+.submit_botton{
+    width: 50%;
+    height: 35px;
+    align-self: center;
+    text-align: center;
+    border-color: rgb(43, 37, 43);
+    box-shadow:rgb(15, 13, 13);
+    color: rgb(241, 232, 232);
+    background-color: rgb(79, 79, 230);
+    border-style: ridge;
+    padding: 3px 2px;
+    border-radius: 45px;
+}
+.form_wrap{
+    margin-top: 30px;
+}
+.form_wrap .input_grp{
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+.form_wrap .input_grp:last-child{
+    margin-left: 110px;
+    padding: 0;
+    text-size-adjust: 3px;
+}
+.submit_botton:hover{
+    color: red;
+}

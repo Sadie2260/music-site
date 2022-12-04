@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/stylelogin.css">
+</head>
+<body>
+<div class="wraper">
+    <div class="login_form">
+        <div class="title">
+            LOGIN
+        </div>
+<div class="subtext">
+    <span><small>dont have a account? <br><a href="../html/signuppage2.html"><u> Signup</u></a></small></span>
+    <br>
+</div>
+<div class="wrap_form">
+        <form method="post" name="myform">
+        <div class="input">
+            <label for="email"> <b>Email:</b> <br> </label>
+            <input type="email" name="email" placeholder="Enter your email" class="email" id="emailadd">
+        </div>
+        <div class="input">
+            <label for="password"> <b>Password:</b> <br></label>
+            <input type="password" name="password" placeholder="Enter your password" id="paswrd" class="ps">
+        </div>
+        <div class="forgetps">
+            <span><small><a href="resetpassword"><u>forget password?</u></a></small></span>
+        </div>
+        <div class="input">
+            <label for="submit"></label>
+    <a href="../html/userhome.html"><input id="loginbtn" type="submit" value="LOGIN" class="botton_login"></a> 
+        </div>
+        </form>
+    </div>
+    </div>
+</div>
+    <!-- <div class="wrap_login">
+        <div class="signup_form">
+   <div class="title_login">
+       LOG IN
+   </div>
+   <div>
+       <span><small>dont have an account? <a href="signppage2.html"><u>Sign up</u></a></small></span>
+   </div>
+   <form action="form.nodejs">
+        <div class="input_group">
+            <label for="Email"><b>Email Address</b><br></label>
+            <input type="email" name="Email" placeholder="Enter your email address" id="email" class="email">
+        </div>
+        <div class="input_group">
+            <label for="password"><b>Password</b><br></label>
+            <input type="password" name="password" placeholder="Enter your Password" id="ps"class="ps">
+        </div>
+        <div class="forgetps">
+            <span><small><a href="resetpassword"><u>forget password?</u></a></small></span>
+        </div>
+        <div class="button">
+            <button type="submit">Login</button>
+        </div>
+    </div>
+   </form>
+</div>
+</div> -->
+    
+</body>
+<script>
+
+    // function login(){
+    //     var un=document.forms["myform"]["email"].value;
+    //     var ps=document.forms["myform"]["password"].value;
+    //     if(un=="sadiashabbir@gmail.com" && ps=="12345")
+    //     {
+    //         window.location.href="homie.html";
+    //     }
+    //     else{
+    //         alert("invalid password")
+    //     }
+    // }
+    document. getElementById("loginbtn"). onclick = function () {
+location. assign = "http://www./html/userhome.html/";
+};
+</script>
+</html>

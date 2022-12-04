@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/yourprofile.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+        var addcontrols="<a id='Link2' class='table' onclick='Table4();' >playlist 4</a>"
+        addcontrols+='<table class="inner-list" id="TableNested4" style="display:none">'
+            addcontrols+='<tr class="sng"><td>song<span><img class="d-icon" src="/source code/images/delete.png" alt="delete"></td></tr>'
+    addcontrols+='<tr class="sng"><td>song<span><img class="d-icon" src="/source code/images/delete.png" alt="delete"></span></tr></td>'
+    addcontrols+='<tr class="sng"><td>song<span><img class="d-icon"  src="/source code/images/delete.png" alt="delete"></span></tr></td>'
+   $("table tbody").append(addcontrols);
+    });
+});
+</script>
+    </head>
+<body>
+    <header>
+    <div class="navbar navbar-style positon-fixed">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#"><img class="logo" src="../images/logo2.png"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="..html/userbrowser.html" class="acitve"> Home</a></li>
+                <li><a href="../html/userbrowser.html"> browser</a></li>
+                <li><a href="../html/userabout.html"> About us</a></li>
+                <li><a href="#"> Terms and <br> conditons</a></li>
+                <li><a href="../html/yourprofile2.html"> your profile</a></li>
+            </ul>
+        </div>
+    </div>
+      <div class="bg-1">
+        <div class="container dropdown ">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Delete Account</a>
+              <a href="#">Delete Playlist</a>
+              <a href="../html/homie.html">Log Out</a>
+            </div>
+          </div>
+          <div class="container content-bg text-left">
+            <span class="hd">WELCOME <br>  back!!!</span> 
+            <br>
+            <span class="quote">
+            turn on music 
+            <br>
+            turn off world!
+        </span>
+          </div>
+    </div>
+</div>   
+    
+    <div class="bg-2">
+  <div class="container playlist-area">
+  <span class="bleh"><tr > Playlists</tr></span>
+  <a id="LogicLink" class="table" onclick="Table1();" >playlist1</a>
+<table class="inner-list" id="TableNested1"  style="display:none">
+<tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></td></tr>
+    <tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></td></tr>
+</table>     
+<a id="Link" class="table" onclick="Table2();" >playlist 2</a>
+<table class="inner-list" id="TableNested2" style="display:none">
+<tr class="sng"><td>song <span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></td></tr>
+    <tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></tr></td>
+    <tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></tr></td>
+    <tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></tr></td>
+</table> 
+<a id="Link1" class="table" onclick="Table3();" >playlist 3</a>
+<table class="inner-list" id="TableNested3" style="display:none">
+<tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></td></tr>
+    <tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></tr></td>
+    <tr class="sng"><td>song<span><img class="d-icon"  src="../images/delete.jpg"alt="delete"></span></tr></td>
+    <tr class="sng"><td>song<span><img class="d-icon" src="../images/delete.jpg" alt="delete"></span></tr></td>
+</table> 
+<table>
+    <tbody>
+
+    </tbody>
+</table>
+<button id="button" type="button" class="table add-btn" value="add more" >add more</button>
+</div>
+</div>
+</header>
+<footer class="footer">
+    <div class="container foter">
+        <div class="row">
+            <div class="footer-col">
+                <span class="flogo"> <img src="../images/logo2.png" alt="MUSIC STORE" width="80px" height="auto"></span>
+                <ul>
+                    <li class="content"> <a href="#"> thnaks for visiting our website!!</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Useful links</h4>
+              <ul>
+                  <li><a href="../html/userhome.html">Home</a></li>
+                  <li><a href="../html/userabout.html">about us</a></li>
+                  <li><a href="../html/yourprofile2.html">YOUR profile</a></li>
+                  <li><a href="../html/signuppage2.html">signup</a></li>
+                  <li><a href="#">terms and <br>conditons</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Connents</h4>
+              <div class="soicallinks">
+              <ul>
+                  <li><a href="#"><i class="fab fa-2x fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-2x fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-2x fa-snapchat"></i></a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+       for (i = 0; i < dropdowns.length; i++) { 
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  const button=document.getElementById("buttn");
+    const list=document.getElementById("list");
+    list.style.display="none";
+    button.addEventListener("click",(event)=>{
+        if(list.style.display="none"){
+            list.style.display="block";
+        }else{
+            list.style.display="none";
+        }
+    })
+    window.onclick=function (event){
+        if(!event.target.matches("#buttn")){
+            document.getElementById('list')
+                    .style.display = "none";}}
+
+                    const button1=document.getElementById("buttn1");
+    const list1=document.getElementById("list1");
+    list1.style.display="none";
+    button1.addEventListener("click",(event)=>{
+        if(list1.style.display="none"){
+            list1.style.display="block";
+        }else{
+            list1.style.display="none";
+        }
+    })
+    window.onclick=function (event){
+        if(!event.target.matches("#buttn1")){
+            document.getElementById('list1')
+                    .style.display = "none";}}
+
+                    const button2=document.getElementById("buttn2");
+    const list2=document.getElementById("list2");
+    list2.style.display="none";
+    button2.addEventListener("click",(event)=>{
+        if(list2.style.display="none"){
+            list2.style.display="block";
+        }else{
+            list2.style.display="none";
+        }
+    })
+    window.onclick=function (event){
+        if(!event.target.matches("#buttn2")){
+            document.getElementById('list2')
+                    .style.display = "none";}}
+
+                    const button3=document.getElementById("buttn3");
+    const list3=document.getElementById("list3");
+    list3.style.display="none";
+    button3.addEventListener("click",(event)=>{
+        if(list3.style.display="none"){
+            list3.style.display="block";
+        }else{
+            list3.style.display="none";
+        }
+    })
+    window.onclick=function (event){
+        if(!event.target.matches("#buttn3")){
+            document.getElementById('list3')
+                    .style.display = "none";}}
+                    // <-------tables--------->
+                    function Table1()
+{
+     var elem=document.getElementById("TableNested1");
+     var hide = elem.style.display =="none";
+     if (hide) {
+         elem.style.display="table";
+    } 
+    else {
+       elem.style.display="none";
+    }
+  }
+
+    function Table2()
+   {
+     var elem=document.getElementById("TableNested2");
+     var hide = elem.style.display =="none";
+     if (hide) {
+         elem.style.display="table";
+    } 
+    else {
+       elem.style.display="none";
+    }
+}
+function Table3(){
+    var elem=document.getElementById("TableNested3");
+    var hide= elem.style.display=="none";
+    if(hide){
+        elem.style.display="table";
+    }else{
+        elem.style.display="none";
+    }
+}
+function Table4(){
+    var elem=document.getElementById("TableNested4");
+    var hide= elem.style.display=="none";
+    if(hide){
+        elem.style.display="table";
+    }else{
+        elem.style.display="none";
+    }
+}
+// $(document).ready(function(){
+// $("a .table").click(function(){
+//     var elem=document.getElementsByClassName("inner-list");
+//     var hide=elem.style.display=="none";
+//     if(hide){
+//         elem.style.display="table";
+//     }else{
+//         elem.style.display="none";
+//     }
+// })
+// });
+</script>
+</html>
