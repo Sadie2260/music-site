@@ -148,3 +148,9 @@ yarn install
 npm start
 # or
 yarn start
+
+👤 Author
+
+Sadia Shabbir (Synterion Solutions)
+Portfolio: https://synterion-solutions.vercel.app/
+Email: <info.synterionsolutions@gmail.com>
